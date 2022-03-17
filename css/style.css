@@ -1,0 +1,328 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,100&display=swap');
+
+.menu{
+    width: 253px;
+    height: 100%;
+    background: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 18px;
+    border-right: 1px solid #f50000
+}
+
+.menu-container{
+    margin: 15px;
+}
+
+.language_menu{
+    display: flex;
+    flex-direction: row;
+    width: 209.98px;
+    height: 15px;
+}
+
+.img-hamburger{
+    margin-left: 110px;
+    margin-right: 10px;
+    height: 15px;
+    display: block;
+    float: right;
+}
+
+.text-lang{
+    margin-top: -6px;
+}
+
+.logo{
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.img-peru{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 15px;
+    display: block;
+}
+.img-profile{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.img-logo{
+    margin-top: 20px;
+    margin-left: 16.6px;
+    margin-right: 16.6px;
+    display: block;
+    margin-bottom: 31px;
+}
+
+/* test */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    /* margin-top: 31px; */
+    position: relative;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.profile img {
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.profile .active {
+    position: absolute;
+    left: 80px;
+    top: 79px;
+    border: 0;
+    background-color: rgb(17, 180, 2);
+    box-shadow: 0 0 12px rgb(0 0 0 / 20%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.name-profile{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.name-profile h2{
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+hr {
+    height: 1px;
+    background-color: red;
+    border: none;
+    width: 90%;
+  }
+
+.text-profile{
+    width: 50px;
+    float: right;
+    margin-right: 10px;
+}
+.text-profile h2{
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+/* lista de menus */
+ul{
+    list-style: none !important;
+    padding-bottom: 10px;
+    margin-inline-start: 0px;
+}
+
+li{
+    font-family: Poppins;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.options__menu{
+margin-top: 50px;
+margin-left: -20px;
+}
+
+.options__menu li{
+    font-size: 14px;
+}
+a{
+    color: WHITE;
+    padding: 0%;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+span{
+    font-family: 'Poppins', sans-serif;
+}
+
+a.selected{
+    color: #f50000;
+}
+
+.personal-information{
+    margin-top: 50%;    
+}
+
+.personal-information p{
+    font-size: 12px;}
+
+.text-personal{
+    color: red;
+}
+
+/* MAIN */
+.main{
+    background: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin-left: 254PX;
+    margin-top: 0px;
+    background: black;
+    font-family: 'Poppins', sans-serif;
+}   
+
+.img-banner{
+    height: 267px;
+    width: 100%;
+}
+
+
+.img-banner img {
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+}
+
+.banner .img-decription {
+    position: absolute;
+    top: 80px;
+    border: 0;
+    width: 90%;
+    height: 175px;
+    
+}
+.banner-card1{
+    width: 312px;
+    height: 234px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.banner-card2 {
+    width: 60%;
+    color: white;
+  }
+
+.banner-card2 p{
+ font-size: 10px;
+}
+
+.banner-card2 h2{
+    font-size: 14px;
+    font-weight: bold;
+   }
+
+/* series */
+
+.container {
+    width: 99%;
+    margin: 15px;
+  }
+  .heading {
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+  }
+  .heading h2 {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .card {
+    width: 15%;
+  }
+  
+  .img-cards{
+      height: 100%;
+      width: 100%;
+  }
+  .card-header {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .card-body {
+    color: white;
+  }
+
+  .card-body small{
+    font-size: 10px;
+  }
+  
+  
+  
+  
+  
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+  
+    .heading {
+      padding: 20px;
+      font-size: 20px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+/* crea perfiles */
+.container {
+    width: 99%;
+    margin: 15px;
+    margin-top: 30px;
+  }
+  .card1 {
+    width: 312px;
+    height: 234px;
+  }
+  .card2 {
+    width: 45%;
+  }
+  .card2 h2{
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .card2 p{
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  .img-banner-card1{
+      width: 100%;
+  }
+
+  .row-profile-kids {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+  .img-card1{
+    margin-top: 40px;
+    width: 100%;
+}
