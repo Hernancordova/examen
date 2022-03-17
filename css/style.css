@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,100&display=swap');
 
-.menu{
+.menu {
     width: 253px;
     height: 100%;
     background: #000000;
@@ -13,18 +12,18 @@
     border-right: 1px solid #f50000
 }
 
-.menu-container{
+.menu-container {
     margin: 15px;
 }
 
-.language_menu{
+.language_menu {
     display: flex;
     flex-direction: row;
     width: 209.98px;
     height: 15px;
 }
 
-.img-hamburger{
+.img-hamburger {
     margin-left: 110px;
     margin-right: 10px;
     height: 15px;
@@ -32,31 +31,32 @@
     float: right;
 }
 
-.text-lang{
+.text-lang {
     margin-top: -6px;
 }
 
-.logo{
+.logo {
     margin-top: 28px;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
-.img-peru{
+.img-peru {
     margin-left: 10px;
     margin-right: 10px;
     height: 15px;
     display: block;
 }
-.img-profile{
+
+.img-profile {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
-.img-logo{
+.img-logo {
     margin-top: 20px;
     margin-left: 16.6px;
     margin-right: 16.6px;
@@ -96,12 +96,14 @@
     border-radius: 50%;
     cursor: pointer;
 }
-.name-profile{
+
+.name-profile {
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-.name-profile h2{
+
+.name-profile h2 {
     font-size: 12px;
     font-weight: lighter;
 }
@@ -111,78 +113,84 @@ hr {
     background-color: red;
     border: none;
     width: 90%;
-  }
+}
 
-.text-profile{
+.text-profile {
     width: 50px;
     float: right;
     margin-right: 10px;
 }
-.text-profile h2{
+
+.text-profile h2 {
     font-size: 10px;
     font-weight: lighter;
 }
 
 /* lista de menus */
-ul{
+ul {
     list-style: none !important;
     padding-bottom: 10px;
     margin-inline-start: 0px;
 }
 
-li{
+li {
     font-family: Poppins;
     margin-bottom: 10px;
     list-style: none;
 }
-.options__menu{
-margin-top: 50px;
-margin-left: -20px;
+
+.options__menu {
+    margin-top: 50px;
+    margin-left: -20px;
 }
 
-.options__menu li{
+.options__menu li {
     font-size: 14px;
 }
-a{
+
+a {
     color: WHITE;
     padding: 0%;
     cursor: pointer;
     text-decoration: none;
 
 }
-span{
+
+span {
     font-family: 'Poppins', sans-serif;
 }
 
-a.selected{
+a.selected {
     color: #f50000;
 }
 
-.personal-information{
-    margin-top: 50%;    
+.personal-information {
+    margin-top: 50%;
 }
 
-.personal-information p{
-    font-size: 12px;}
+.personal-information p {
+    font-size: 12px;
+}
 
-.text-personal{
+.text-personal {
     color: red;
 }
 
 /* MAIN */
-.main{
+.main {
     background: rgb(0, 0, 0);
     height: 100%;
     width: 100%;
 }
-body{
+
+body {
     margin-left: 254PX;
     margin-top: 0px;
     background: black;
     font-family: 'Poppins', sans-serif;
-}   
+}
 
-.img-banner{
+.img-banner {
     height: 267px;
     width: 100%;
 }
@@ -200,129 +208,141 @@ body{
     border: 0;
     width: 90%;
     height: 175px;
-    
+
 }
-.banner-card1{
+
+.banner-card1 {
     width: 312px;
     height: 234px;
     margin-left: 15px;
     margin-right: 15px;
 }
+
 .banner-card2 {
     width: 60%;
     color: white;
-  }
-
-.banner-card2 p{
- font-size: 10px;
 }
 
-.banner-card2 h2{
+.banner-card2 p {
+    font-size: 10px;
+}
+
+.banner-card2 h2 {
     font-size: 14px;
     font-weight: bold;
-   }
+}
 
 /* series */
 
 .container {
     width: 99%;
     margin: 15px;
-  }
-  .heading {
+}
+
+.heading {
     text-align: left;
     font-size: 20px;
     color: white;
     margin-bottom: 15px;
-  }
-  .heading h2 {
+}
+
+.heading h2 {
     font-size: 10px;
     font-weight: bold;
-  }
-  
-  .row {
+}
+
+.row {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-flow: wrap;
-  }
-  
-  .card {
+}
+
+.card {
     width: 15%;
-  }
-  
-  .img-cards{
-      height: 100%;
-      width: 100%;
-  }
-  .card-header {
+}
+
+.img-cards {
+    height: 100%;
+    width: 100%;
+}
+
+.card-header {
     text-align: center;
     color: #fff;
-  }
-  
-  .card-body {
-    color: white;
-  }
+}
 
-  .card-body small{
+.card-body {
+    color: white;
+}
+
+.card-body small {
     font-size: 10px;
-  }
-  
-  
-  
-  
-  
-  @media screen and (max-width: 1000px) {
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
     .card {
-      width: 40%;
+        width: 40%;
     }
-  }
-  
-  @media screen and (max-width: 620px) {
+}
+
+@media screen and (max-width: 620px) {
     .container {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .heading {
-      padding: 20px;
-      font-size: 20px;
+        padding: 20px;
+        font-size: 20px;
     }
-  
+
     .card {
-      width: 80%;
+        width: 80%;
     }
-  }
+}
+
 /* crea perfiles */
 .container {
     width: 99%;
     margin: 15px;
     margin-top: 30px;
-  }
-  .card1 {
+}
+
+.card1 {
     width: 312px;
     height: 234px;
-  }
-  .card2 {
+}
+
+.card2 {
     width: 45%;
-  }
-  .card2 h2{
+}
+
+.card2 h2 {
     font-size: 32px;
     font-weight: bold;
-  }
-  .card2 p{
+}
+
+.card2 p {
     font-size: 18px;
     font-weight: lighter;
-  }
+}
 
-  .img-banner-card1{
-      width: 100%;
-  }
+.img-banner-card1 {
+    width: 100%;
+}
 
-  .row-profile-kids {
+.row-profile-kids {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-  }
-  .img-card1{
+    position: fixed;
+}
+
+.img-card1 {
     margin-top: 40px;
     width: 100%;
 }
