@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    <meta name="END-POINT" content="http://hernan-examen.test">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>

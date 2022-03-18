@@ -11,25 +11,24 @@ use App\Http\Controllers\Admin\MovieController as AdminMovieController;
 
 
 
-Route::get('/', function () {
-    return view('client.index');
-});
+// Route::get('/', function () {
+//     return view('client.index');
+// });
+
+
 Route::get('/',[HomeController::class, 'index'])->name('index');
 
 
 Route::middleware('auth')->group(function() {
   Route::resource('/dashboard', DashboardController::class);
-  Route::resource('usuario', UserController::class);
+  Route::resource('usuario', UserController::class)->except(['show', 'destroy']);
   Route::post('usuario/update-is-active/{usuario}', [UserController::class, 'updateIsActive'])->name('usuario.updateIsActive');
 
   Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
     Route::resource('/menu', AdminNavigationMenuController::class);
     Route::post('menu/update-is-active/{menu}', [AdminNavigationMenuController::class, 'updateIsActive'])->name('menu.updateIsActive');
-
     Route::resource('/movie', AdminMovieController::class);
     Route::post('movie/update-is-active/{movie}', [AdminMovieController::class, 'updateIsActive'])->name('movie.updateIsActive');
-
-
   });
 });
 

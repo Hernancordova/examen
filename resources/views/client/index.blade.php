@@ -30,7 +30,7 @@
 
 
        <div class="profile">
-            <img src="{{ asset('storage/users/'.$user->avatar) }}" alt="img-avatar">
+            <img src="{{ asset('storage/users/'.($user->avatar ?? '')) }}" alt="img-avatar">
             <div class="active">
             </div>
         </div>
@@ -60,10 +60,10 @@
             <p>
                 MIS DATOS
                 <br>
-                <span class="text-personal">Name</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp     {{$user->name}} <br>
-                <span class="text-personal">Last Name</span> &nbsp &nbsp  {{$user->last_name}}  <br>
-                <span class="text-personal">N° Phone</span> &nbsp &nbsp &nbsp   {{$user->phone}} <br>
-                <span class="text-personal">N° Card</span> &nbsp &nbsp &nbsp &nbsp {{$user->nro_card}}
+                <span class="text-personal">Name</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp {{$user->name ?? ''}} <br>
+                <span class="text-personal">Last Name</span> &nbsp &nbsp  {{$user->last_name ?? ''}}  <br>
+                <span class="text-personal">N° Phone</span> &nbsp &nbsp &nbsp   {{$user->phone ?? ''}} <br>
+                <span class="text-personal">N° Card</span> &nbsp &nbsp &nbsp &nbsp {{$user->nro_card ?? ''}}
             </p>
         </div>
      </div>

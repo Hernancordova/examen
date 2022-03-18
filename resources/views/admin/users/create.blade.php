@@ -21,7 +21,7 @@ Usuarios
           </div>
           <hr>
 
-          @if (count($errors->all()))
+          @if ($errors->any())
           <div class="alert alert-danger alert-dismissible fade show" role="alert">
             <ul class="mb-0">
               @foreach ($errors->all() as $message)
@@ -66,7 +66,7 @@ Usuarios
             </div>
 
             <div class="mb-3">
-              <label class="mb-0" for="">Avatar <small class="text-muted"> (Tamaño de imagen recomendado 220px x 290px) </small></label>
+              <label class="mb-0" for="">Avatar <small class="text-muted"> (Tamaño de imagen recomendado 220x290px) </small></label>
               <input type="file" accept="image/*" class="form-control" name="avatar" id="avatar">
             </div>
             <a href="{{ route('usuario.index') }}" class="btn btn-danger">Cancelar</a>

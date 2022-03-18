@@ -68,20 +68,6 @@ class UserController extends Controller
     return redirect()->route('usuario.index')->with('updated', 'Registro actualizado exitósamente.');
   }
 
-  public function show($id)
-  {
-    //
-  }
-
-
-  public function destroy($id)
-  {
-    $user = User::find($id);
-    $user->delete();
-
-    return redirect()->route('usuario.index')->with('deleted', 'Registro eliminado exitósamente.');
-  }
-
   public function updateIsActive(Request $request, $id)
   {
     $newState = $request->state ? 0 : 1;

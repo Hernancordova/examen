@@ -11,10 +11,7 @@
     <link href="{{ asset('admin/assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <link href="{{ asset('admin/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('admin/assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
-    <meta name="END-POINT" content="http://netflix01.test:8080/">
-
-
-
+    <meta name="END-POINT" content="{{ config('app.end_point') }}">
     <link rel="stylesheet" href="{{ asset('admin/assets/css/general-styles.css') }}">
     @yield('styles')
   </head>
@@ -93,7 +90,7 @@
             <div class="vertical-menu">
 
                 <div data-simplebar class="h-100">
-                    <div class="user-details">
+                    {{-- <div class="user-details">
                         <div class="d-flex">
                             <div class="me-2">
                                 <img src="{{asset('backend/assets/images/users/avatar-4.jpg')}}" alt="" class="avatar-md rounded-circle">
@@ -120,7 +117,7 @@
                                 <p class="text-white-50 m-0">Administrator</p>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                     @include('admin.layouts.menu-sidebar')
                 </div>
