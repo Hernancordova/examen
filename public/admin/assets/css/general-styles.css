@@ -1,0 +1,78 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.user-select-none {
+  user-select: none;
+}
+
+.image-scale{
+  transform: scale(.9);
+  transition-duration: 300ms;
+}
+
+.image-scale:hover {
+  transform: scale(1.1);
+}
+
+
+input:focus::placeholder {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 300ms;
+}
+
+
+table thead tr th.column-date {
+  min-inline-size: 170px;
+  inline-size: 170px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.card .card-body .card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.card .card-body .card-title h6 {
+  color: var(--bs-primary);
+  margin-bottom: 0;
+}
+
+.form-label {
+  margin-bottom: 0;
+}
+
+.span-reqrired {
+  color: var(--bs-danger);
+  user-select: none;
+}
+
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 8px;
+  display: block;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #73b9ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1B82EC;
+  border-radius: 3px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+tr.vertical-align-middle th {
+  vertical-align: middle;
+}
